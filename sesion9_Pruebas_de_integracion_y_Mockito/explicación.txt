@@ -1,0 +1,26 @@
+Sesión: 
+En esta sesión aprenderás lo que son las pruebas de integración, 
+la importancia de aislar el SUT de las dependencias, y lo que es Mockito, así como su arquitectura.
+
+
+
+- Qué ocurre cuando nuestro código depende de terceros
+
+- Fake data: Datos falsos, consiste en modificar el código para que devuelva siempre datos de algún tipo, sin depender de datos ajenos.
+
+- Stubs: Un stub es, en el contexto del testeo del software, un trozo de código usado como sustituto de alguna otra funcionalidad. 
+Un stub puede simular el comportamiento de código existente o ser el sustituto temporal para un código aún no desarrollado.
+SUPLANTA UN SÓLO MÉTODO
+
+- Mocks: Son objetos falsos que simulan ser otro objeto, para trabajar con esa clase e implementar los tests 
+conociendo lo que debemos recibir como resultado. 
+FALSEA UNA INSTANCIA DE UN OBJETO.
+
+- Mockito: Mockito es un framework de prueba del código abierto para Java
+El framework permite la creación de objetos dobles de prueba en pruebas de unidad automatizada para el desarrollo 
+guiado por pruebas o desarrollo dirigido por el comportamiento.
+
+*Hay que añadir la dependencia de maven llamada Mockito-All. "Ver el pom del código de esta sesión"
+
+
+CREAMOS UN PEQUEÑO EJEMPLO DE CADA UNO, VER CÓDIGO!!

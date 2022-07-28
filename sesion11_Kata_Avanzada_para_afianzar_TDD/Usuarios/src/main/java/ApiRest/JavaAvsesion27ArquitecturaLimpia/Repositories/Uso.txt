@@ -1,0 +1,3 @@
+En este paquete vamos a colocar todos los repositorios de datos:
+UsuariosDB y sus clases hijas
+UsuariosDBFicheros y UsuariosDBMemoria

@@ -1,0 +1,4 @@
+Aquí van los servicios que unen la capa de Entidades(Entities) con la capa de Acceso a datos(Repositories)
+O, lo que es lo mismo, las clases o interfaces que hacen de intermediarias:
+
+-Usuarios (lo renombramos como UsuariosServicios para cumplir con la convención)

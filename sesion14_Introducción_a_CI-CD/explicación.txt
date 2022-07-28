@@ -1,0 +1,12 @@
+		SESIÓN TEÓRICA
+--Lo vimos de manera más profunda en el módulo Git
+
+Qué es la CI -> Continuous Integration
+Integreación continua
+
+- Feature Toggler
+Es una forma de activar o desactivar features.
+
+- Qué es el CD -> Continuous Development/Deployment
+Desarrollo continuo/ Producción continua
+

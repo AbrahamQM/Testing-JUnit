@@ -1,0 +1,16 @@
+Vamos a Coger el código anterior Usuarios, Usuariosdb, UsuariosFichero, UsuariosMemoria
+y lo vamos a convertir en una api REST basado en arquitectura limpia.
+
+La arquitectura limpia son una serie de directrices sobre como organizar nuestro código.
+-No hay una forma universal de hacerlo, cada aplicación se organizará de una forma, siguiendo
+ una serie de preceptos.
+        Los preceptos es la separación en capas:
+        -Entidades.
+        -Casos de uso.
+        -Controladores o Presentadores o gateways.
+        -Acceso a datos, interfaz de usuario, ...
+
+**Creamos un nuevo proyecto con SprintBoot (spring initializr)
+    -Incluimos Jersey
+**Organizamos las clases en paquetes (preceptos)
+

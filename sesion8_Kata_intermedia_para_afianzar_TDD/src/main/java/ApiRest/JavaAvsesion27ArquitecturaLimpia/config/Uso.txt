@@ -1,0 +1,3 @@
+Aquí van los ficheros de configuración.
+Que en este ejemplo, se encargarán de indicar hacia donde van a ir las peticiones http:
+Jerseyconfig

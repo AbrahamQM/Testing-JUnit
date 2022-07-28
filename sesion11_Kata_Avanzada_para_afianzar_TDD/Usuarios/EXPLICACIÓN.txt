@@ -1,0 +1,17 @@
+Hemos copiado el código final de la sesion 8
+
+En esta sesión:
+1º Modificamos UsuariosService en ln:24-28 para settear el objeto de bbdd
+Haremos que el tipo de UsuarioDB sea el que le indiquemos al invocar la función setUsuariosDB()
+
+2º Vamos a Hacer un Stub que simule una conexión a una bbdd Real
+para no depender de una bbdd.
+//Comenzaremos creando UsuariosDBStub dentro de los repositorios.
+-Ahí copiaremos el código de UsuariosDBMemoria que es la más sencilla para crear el Stub.
+
+-Después vaciaremos el código de los métodos para comenzar a trabajar con ellos.
+        He eliminado la parte de registro de insersiones y eliminaciones porque no la vamos a usar.
+
+-Una vez lista la clase UsuariosDBStub para que las funciones nos devuelvan datos esperados:
+//Creamos Test con stub (obtenerUsuario())
+//Creamos test con mokito: obtenerUsuarioMock(), crearUsuarioQueNoExisteMock(), ...

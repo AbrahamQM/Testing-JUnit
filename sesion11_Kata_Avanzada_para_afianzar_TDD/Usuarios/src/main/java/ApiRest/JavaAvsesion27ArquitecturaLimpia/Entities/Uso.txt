@@ -1,0 +1,2 @@
+En este paquete vamos a incluir todos las clases que representan una entidad.
+En este caso Usuario

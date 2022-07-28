@@ -1,0 +1,26 @@
+
+- En qué consiste el TDD
+
+Test Driven Development (desarrollo dirigido a través de las pruebas)
+
+1º Escribimos el test con los resultados esperados.
+2º Escribimos el código que crea esos resltados
+
+
+- Etapas
+
+1º Fallo o Failure, (ya que no hay código, todos los test fallan)
+2º Satisfecho o Success (cuando el código ya es correcto)
+3º Refactory (limpiamos el código para que quede refactorizado)
+
+- Reglas
+
+1º No esta permitido escribir código que va a producción sin tener un test.
+2º No está permitido escribir mas código en la prueba unitaria del necesario.
+3º No está permitido escribir mas código del necesario para superar la prueba unitaria.
+
+- Ventajas del TDD
+
+* No vamos a introducir fallos
+* Acorta los tiempos de desarrollo
+* Te obliga a hacer código limpio.

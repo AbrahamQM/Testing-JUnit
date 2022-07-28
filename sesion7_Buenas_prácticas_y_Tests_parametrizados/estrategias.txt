@@ -1,0 +1,95 @@
+
+
+---Particionar las pruebas en partes equivalentes.
+
+
+*********************************************************************
+
+---Análisis de extremos:
+
+-Suponiendo que tenemos una clase de compras, y un método que soporta un valor.
+
+*Deberemos crear las pruebas de forma que verifiquemos el mínimo y el máximo de esa función.
+
+Suponemos que nuestro método de compras, recibe un parámetro negativo. Si no podemos aceptar eso.
+Debemos verificar que el precio de compra siempre sea igual o superior a 0,01€
+
+También tendríamos que verificar que vengan con decimales y,
+También que no supere un valor determinado
+
+
+----------------------------------------------------------------------------------------------------------------------------
+---La trancisión de estados o Funcional
+
+-Suponiendo que intentamos logearnos erróneamente en una web y esa web debe bloquearnos por seguridad.
+
+Debemos crear un test que intente loguearse 3 veces con datos erróneos y despues comprobar que se ha bloqueado el usuario.
+
+-Lo mismo de forma contraria
+
+Verificar que un usuario bloqueado puede loguearse correctamente despues de haberse desbloqueado.
+
+----------------------------------------------------------------------------------------------------------------------------
+---Intentar adivinar el error.
+
+Intentando adivinar donde va a fallar el programador.
+
+-Con el ejemplo de un usuario que se loguea.
+
+Hay que comprobar que no hay espacios vacios al principio o al final de el user o la password.
+
+Hay que verificar que los parámetros son correctos. Ej si el user es un email, hay que comprobar que es usuario@dominio.loquesea
+
+
+-En el caso de que podamos subir ficheros a una plataforma:
+
+Hay que verificar el tamaño y el formato del fichero.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+---tests negativos
+
+Consise en comprobar el code coverage haciendo que el código funcione de una forma que no hubieramos esperado.
+
+Por ejemplo si un método recibe un parámetro erróneo o no cumple un if que pensamos que siempre se va a cumplir
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+---Diagramas de causa y efecto.
+
+Tenemos que representar que pasa en cada caso concreto tanto en test positivos como negativos.
+
+Eso nos ayudará a crear los tests.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+---No cancelar los test si no se están pasando.
+
+Sólo se modificarán los test en caso de que el test esté mal escrito.
+Por lo que si un test falla y está bien escrito, lo que debemos hacer es reparar nuestro código.
+
+
+
+----------------------------------------------------------------------------------------------------------------------------
+---Anidar los tests
+
+Agrupar los tests para darles coherencia. 
+De forma que agrupemos de forma lógica las pruebas para que se ejecuten.
+
+-Por ejemplo hemos creado las clases Usuario y Usuarios como entidad y repositorio de usuarios respectivamente (ver código)
+
+Antes de poder testear el método de Usuarios borrar(usuario) 
+Debemos tener un usuario creado si queremos comprobar que se ha borrado correctamente.
+
+
+
+
+
+
+
+
+
+

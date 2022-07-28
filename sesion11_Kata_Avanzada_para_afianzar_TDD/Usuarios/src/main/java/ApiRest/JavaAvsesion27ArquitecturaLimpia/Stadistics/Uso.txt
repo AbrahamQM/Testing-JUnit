@@ -1,0 +1,2 @@
+Esta Capa o precepto, lo he creado yo para incluir dentro a la clase UsuariosDBEstadisticas
+y así no perder esa característica

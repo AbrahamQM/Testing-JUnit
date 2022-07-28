@@ -1,0 +1,83 @@
+En esta sesión aprenderás las limitaciones de TDD en proyectos con diversos stakeholders, 
+en qué consiste la metodología BDD, odentificación de Features, Historias de usuario, etc.
+
+EL BDD NO SUSTITUYE AL TDD, SINO QUE LO COMPLEMENTA.
+
+---- Por qué usar la metodología Behaviour Driven Development, diferencias con el TDD
+
+*Con TDD estamos comprobando los componentes de forma aislada, sin seguir la funcionalidad que esperamos en el desarrollo.
+Hacemos pruebas unitarias sobre nuestro código.
+
+*Con BDD probamos de manera funcional acorde a lo que esperamos que ocurra en conjunto.
+Hacemos pruebas como si fueran guiones funcionales. Escribimos los escenarios de uso y lo que tiene que ocurrir con un lenguaje plano.
+Une a personas técnicas con personas no técnicas. Está pensado para personas no técnicas.
+
+
+---- Ventajas y desventajas del BDD
+
+**Ventajas:
+*Permite estimar más fácilmente los requisitos.
+*Usa un lenguaje cercano, no técnico.
+*Podemos descomponer un proyecto en pequeñas funcionalidades.
+*Permite múltiples idiomas usando la palabra reservada #Language
+
+**desventajas:
+*Pueden ser difíciles de implementar.
+*En proyectos grandes no escala bien.
+
+---- Partes del BDD
+*Features o características (funcionalidades requeridas por nuestro programa).
+*Escenarios (es la especificación de las cosas que deben ocurrir para cumplir con las features)
+*Historia (asocia las features y los escenarios de forma textual con un lenguaje, en este caso Gherkin)
+
+---- Cómo trabajar con Gherkin 
+*Usa palabras reservadas como:
+-#Language: siglasDelLenguajeQueDeseamosUsar (ver Ej1)
+-Feature(funcionalidad)
+-Scenario(caso concreto)
+-Outline(se coloca después de Scenario, para cuando se debe ejecutar algo múltiples veces)
+-Given(contexto)
+-When(evento o acción)
+-Or
+-And
+-But
+-*(se usa cuando hay varios And, como sustituto del And)
+-Then(resultado esperado). 
+-Examples (reune una serie de casos para cuando estamos en un Scenario Outline, y dentro tiene una tabla con cada caso).
+
+Ej1:
+...............................................................................
+#Language: en
+
+Feature: Búsqueda en google
+ Scenario: Google Images muestra fotos.
+  Given El usuario abre un navegador
+  When El usuario busca "gatito"
+  Then Aparecerán imágenes de gatitos en los resultados de búsquedas
+
+ Scenario: Búsqueda desde la barra de búsqueda del navegador.
+  Given El usuario escribe unos términos de búsqueda en su navegador
+  When El usuariopulsa intro
+  Or El usuario pulsa el botón buscar
+  Then Enviamos al usuario a los resultados de búsqueda de los términos indicados.
+...............................................................................
+
+*Las Tablas: se declaran con |contenido|
+
+Ej2 EN ESPAÑOL con Scenario Outline: por cada elemento de la tabla que hay en Examples, se va a repetir todos los pasos 
+...............................................................................
+#Language: es
+Esquema del escenario: Búsqueda desde la barra de búsqueda del navegador.
+  Dado El usuario escribe unos términos de búsqueda en su navegador
+  Cuando El usuariopulsa intro
+  O El usuario pulsa el botón buscar
+  Entonces Enviamos al usuario a los resultados de búsqueda de los términos indicados.
+  Ejemplos:
+    |caso repetición uno|
+    |caso repetición dos|
+    |caso repetición tres|
+
+...............................................................................
+
+
+- Examples, soporte para cadenas de texto, datatables y language

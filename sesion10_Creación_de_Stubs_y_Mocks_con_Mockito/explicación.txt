@@ -1,0 +1,1 @@
+En esta sesión aprenderás lo que son y a crear Stubs, Mocks con Mockito y la creación de pruebas con Mockito.

@@ -1,0 +1,25 @@
+¡¡Intellij community edition no soporta cucumber. LA SOLUCIÓN ES: descargar el plugin de cucumber para java!!
+--OJO NO CONSIGO QUE CONECTE demo.features con la clase de test Demo--
+-Debe ser algo de la configuración de intellij o porque la versión community no lo soporta.
+-Dejé de copiar el código después de min 28 del video. ***********MUY RECOMENDABLE VOLVER A VER EL VÍDEO************
+
+
+--Empezamos con un proyecto desde cero y le añadimos el framework support maven
+
+-Añadimos la dependencia "cucumber", en este caso:
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>7.0.0</version>
+        </dependency>
+
+-Creamos una carpeta de recursos "Resources" dentro de el apartado de Test del proyecto.
+-Dentro de esta carpeta vamos a escribir los ficheros .featrure, en este caso "demo.feature"
+
+
+-Luego comenzamos a trabajar en el demo.feature con el lenguaje Gherkin
+
+-Después de tener nuestra primera feature, intentamos ejecutar el código, lo que nos dará como respuesta 
+un error y una sugerencia de código para que usemos en un archivo de test dentro de la carpeta de test/java/Demo.java
+
+

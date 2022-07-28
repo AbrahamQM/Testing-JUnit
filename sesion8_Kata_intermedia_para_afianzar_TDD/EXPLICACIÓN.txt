@@ -1,0 +1,10 @@
+Hemos copiado el código final de Java avanzado 
+
+La api REST que almacena usuarios de diferentes formas.
+
+-TRABAJAREMOS CON LA CLASE UsuariosDBFichero comenzando por eliminar todo el contenido para empezar con TDD
+
+-Modificaremos la interfaz UsuariosDB por una clase abstracta (Para tenerlo igual que el profe)
+
+-Comenzaremos la metodología TDD en el test UsuariosDBFicheroTest
+

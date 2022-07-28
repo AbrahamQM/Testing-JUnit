@@ -1,0 +1,13 @@
+
+Introducción a tipos de test o pruebas
+- Qué es el testing
+- Pruebas unitarias
+- Pruebas de integración y mocking
+- Pruebas funcionales
+- Prueba de aceptación
+- Test case
+- Test suites y test suites collection
+- Cómo saber qué se ha testeado: code coverage
+- En qué se basan los tests
+- Introducir un bug en el código para comprobar el testeo
+- Introducción a JUnit y repaso
